@@ -18,28 +18,58 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .sidebar .logo,
-.sidebar .main div
+.sidebar .main div,
+.sidebar .misc div,
+.sidebar .main div a,
+.sidebar .misc div a
 {
     display: flex;
     align-items: center;
     gap: 8px;
     padding-left: 4px;
+    text-decoration: none;
+    color: black;
 }
 
-.sidebar .main{
+.sidebar .main,
+.sidebar .misc{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 
+
 .header{
     grid-row: 1/2;
     grid-column: 2/3;
     border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .top{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .top form{
+    border: 1px solid orange;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.header .top .profile{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 15px;
 }
 
 .content{
